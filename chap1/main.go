@@ -1,8 +1,8 @@
 package main
 
-import "fmt"
-
-func main() {
-
-	fmt.Println("Test Chap1 MG04")
-}
+func main (){
+	// learning_switch()
+	// leaning_loop()
+	// standard_input()
+	 calculate_density()
+} 
