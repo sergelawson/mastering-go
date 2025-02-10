@@ -7,9 +7,7 @@ import (
 	"unicode/utf8"
 )
 
-
-
-func calculate_density(){
+func calculate_density() {
 	arguments := os.Args
 
 	if len(arguments) < 3 {
@@ -17,28 +15,26 @@ func calculate_density(){
 		return
 	}
 
-	if len(arguments) == 3{
+	if len(arguments) == 3 {
 
-		 mass, errMass := strconv.ParseFloat(arguments[1], 64)
-		 volume, errVolum := strconv.ParseFloat(arguments[2], 64)
+		mass, errMass := strconv.ParseFloat(arguments[1], 64)
+		volume, errVolum := strconv.ParseFloat(arguments[2], 64)
 
-
-		 if errMass != nil  {
+		if errMass != nil {
 
 			fmt.Println("Valid mass required!")
 			return
-		 }
+		}
 
-		 if errVolum != nil {
+		if errVolum != nil {
 			fmt.Println("Valid volume required!")
 			return
-		 }
+		}
 
+		density := mass / volume
 
-		 density := mass / volume
-
-		 fmt.Printf("The desity is %.2f \n", density)
-		 return
+		fmt.Printf("The desity is %.2f \n", density)
+		return
 	}
 
 	var massArg string
@@ -59,18 +55,16 @@ func calculate_density(){
 	mass, errMass := strconv.ParseFloat(massArg, 64)
 	volume, errVolum := strconv.ParseFloat(volumeArg, 64)
 
+	if errMass != nil {
 
-	if errMass != nil  {
-
-	   fmt.Println("Valid mass required!")
-	   return
+		fmt.Println("Valid mass required!")
+		return
 	}
 
 	if errVolum != nil {
-	   fmt.Println("Valid volume required!")
-	   return
+		fmt.Println("Valid volume required!")
+		return
 	}
-
 
 	density := mass / volume
 

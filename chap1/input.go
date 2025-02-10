@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 func standard_input() {
 	fmt.Println("Enter your name")
 

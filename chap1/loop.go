@@ -5,7 +5,6 @@ import (
 	"strings"
 )
 
-
 func leaning_loop() {
 
 	var colors [3]string = [3]string{"RED", "GREEEN", "BLUE"}
@@ -19,12 +18,12 @@ func leaning_loop() {
 
 	for i <= 10 {
 
-	fmt.Printf("Counting to %d \n", i)
+		fmt.Printf("Counting to %d \n", i)
 		i++
 	}
 
-	for j := 10 ; j <= 20; j++ {
-		
+	for j := 10; j <= 20; j++ {
+
 		fmt.Printf("Counting to %d \n", j)
 
 	}

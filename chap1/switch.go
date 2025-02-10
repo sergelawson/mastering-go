@@ -6,7 +6,6 @@ import (
 	"strconv"
 )
 
-
 var Global int = 1234
 var AnotherGlobal = -5678
 
@@ -22,11 +21,11 @@ func learning_switch() {
 	}
 
 	switch {
-		case age >= 18 :
-				fmt.Printf("You are %d years old, and you are eligible to pursue  your application\n", age)
+	case age >= 18:
+		fmt.Printf("You are %d years old, and you are eligible to pursue  your application\n", age)
 
-		default:
-			fmt.Println("You are under age, you need to join your parents concent document to your application")
+	default:
+		fmt.Println("You are under age, you need to join your parents concent document to your application")
 	}
 
 	// fmt.Printf("Global %d \n", Global)

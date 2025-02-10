@@ -6,22 +6,22 @@ import (
 	"path/filepath"
 )
 
-func which(){
-	 arguments := os.Args
+func which() {
+	arguments := os.Args
 
-	 if len(arguments) == 1 {
+	if len(arguments) == 1 {
 		fmt.Println("Please enter aruments!")
 
 		return
-	 }
+	}
 
 	file := arguments[1]
 
-	 path := os.Getenv("PATH")
+	path := os.Getenv("PATH")
 
-	 pathList := filepath.SplitList(path)
+	pathList := filepath.SplitList(path)
 
-	 for _, directory := range pathList {
+	for _, directory := range pathList {
 
 		fullpath := filepath.Join(directory, file)
 
@@ -44,5 +44,4 @@ func which(){
 		}
 	}
 
-	 
 }

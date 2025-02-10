@@ -5,12 +5,12 @@ import (
 	"time"
 )
 
-func myPrint(start int, finish int){
+func myPrint(start int, finish int) {
 
 	for i := start; i <= finish; i++ {
 
 		fmt.Print(i, " ")
-	
+
 	}
 
 	fmt.Println()
