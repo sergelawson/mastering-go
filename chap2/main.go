@@ -9,5 +9,11 @@ func main() {
 
 	// fmt.Println("Max Int", math.MaxInt)
 
-	goRunes()
+	// goRunes()
+
+	//goStrings()
+
+	// goDates()
+
+	goConstants()
 }
