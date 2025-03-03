@@ -5,18 +5,15 @@ import (
 	"time"
 )
 
+func goDates() {
 
+	now := time.Now().Local()
 
-func goDates(){
+	parsedt, err := time.Parse("Jan 02 2006", "Feb 29 2024")
 
-	 now := time.Now().Local()
-
-	parsedt,err := time.Parse("Jan 02 2006", "Feb 29 2024")
-
-	if err != nil{
+	if err != nil {
 
 		fmt.Println("Invalid date")
-
 
 		return
 	}
@@ -25,7 +22,7 @@ func goDates(){
 
 	location, err := time.LoadLocation("America/Los_Angeles")
 
-	if err != nil{
+	if err != nil {
 		fmt.Println("Invalid time zone")
 		return
 	}

@@ -15,5 +15,7 @@ func main() {
 
 	// goDates()
 
-	goConstants()
+	// goConstants()
+
+	goSlice()
 }

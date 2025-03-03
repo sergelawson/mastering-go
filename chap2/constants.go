@@ -2,9 +2,7 @@ package main
 
 import "fmt"
 
-
-
-func goConstants(){
+func goConstants() {
 
 	const PI = 3.1415926
 
@@ -27,9 +25,8 @@ func goConstants(){
 
 	fmt.Printf("XYZ values %04d %04d %04d\n\n", X, Y, Z)
 
-
 	const (
-		READ  = 1 << iota
+		READ = 1 << iota
 		WRITE
 		EXECUTE
 	)
@@ -37,7 +34,6 @@ func goConstants(){
 	permissions := READ | WRITE | EXECUTE
 
 	fmt.Printf("PERMISSION: %b\n\n", permissions)
-
 
 	fmt.Printf("Flags values \nREAD: %d\nWRITE: %d\nEXECUTE: %d\n\n", READ, WRITE, EXECUTE)
 
@@ -48,12 +44,8 @@ func goConstants(){
 
 	k := float32(20.12)
 
-
 	fmt.Println("I*J", I*J)
 
 	fmt.Println("J*k", J*k)
-
-	
-
 
 }
